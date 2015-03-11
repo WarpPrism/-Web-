@@ -1,0 +1,10 @@
+* {font-family: "Arial";}
+table {border-collapse: collapse;}
+th,td {border: 2px solid #c0c0c0; padding: 1px 3px;}
+th {background-color: #000080; color: #FFF; text-align: left; }
+th:hover {cursor: pointer;}
+.alternate { background-color: #dddddd;}
+h1 {font-size: 26px; font-weight: normal;}
+h2 {font-size: 20px; font-weight: normal;}
+#staff { width: 400px;}
+#todo {width: 500px;}
