@@ -8,7 +8,7 @@ function getAllTables() {
 	var tables = document.getElementsByTagName("table");
 	return tables;
 }
-
+//使所有表格变为可排序的
 function makeAllTablesSortable(tables) {
 	for (var i = 0; i < tables.length; i++) {
 		var ths = tables[i].getElementsByTagName("th");
