@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#at-plus-container {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+
+    cursor: pointer;
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+}
+
+#bottom-positioner {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+}
+
+.apb {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    -webkit-transition: all .3s .6s;
+         -o-transition: all .3s .6s;
+            transition: all .3s .6s;
+
+    border-radius: 50%;
+    background-color: rgba(0,0,60,.4);
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition: all .3s .6s;
+         -o-transition: all .3s .6s;
+            transition: all .3s .6s;
+
+    background-image: url(../assets/images/atplus_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: 20px;
+            background-size: 20px;
+}
+#info-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 30px;
+    height: 30px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+
+    opacity: 0;
+    border-radius: 50%;
+    background-color: rgba(0,0,10,.4);
+}
+.info {
+    position: relative;
+
+    width: 130px;
+    height: 130px;
+}
+.info li {
+    position: absolute;
+
+    color: #fff;
+}
+
+.info li span {font-weight: bold; }
+.user {
+    top: 10px;
+    left: 40px;
+}
+
+.comment {
+    font-size: 24px;
+
+    top: 42px;
+    left: 30px;
+}
+.comment span {margin-left: 6px; } .posted {
+    bottom: 20px;
+    left: 20px;
+}
+
+.like {
+    right: 20px;
+    bottom: 20px;
+}
+.like span,
+.posted span {
+    color: #079e6e;
+}
+
+#control-ring li {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+
+    opacity: 0;
+    border-radius: 50%;
+    background-color: rgba(0,0,10,.4);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: 16px;
+            background-size: 16px;
+}
+#control-ring li:hover {background-color: rgba(0,0,20,.6); }
+#info-bar li img,
+#info-bar li span {
+    display: inline-block;
+
+    vertical-align: middle;
+}
+#info-bar li span {
+    margin-left: 6px;
+}
+.unread {
+    font-size: 10px;
+
+    position: absolute;
+    top: -4px;
+    right: -6px;
+
+    width: 15px;
+    height: 15px;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 50%;
+    background-color: red;
+}
+#at-plus-container:hover {
+    bottom: 0;
+    left: calc(50% - 100px);
+
+    width: 200px;
+    height: 300px;
+    /*background-color: rgba(0,0,0,.1);*/
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+}
+#at-plus-container:hover #bottom-positioner {
+    top: 170px;
+    left: 100px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+}
+
+#at-plus-container:hover #info-bar {
+    top: -150px;
+    left: -50px;
+
+    width: 130px;
+    height: 130px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+
+    opacity: 1;
+    background-color: rgba(0,0,10,.4);
+}
+#at-plus-container:hover .apb {
+    top: -10px;
+    left: -10px;
+
+    width: 50px;
+    height: 50px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+
+    border-radius: 50%;
+    background-color: rgba(48,63,159,1);
+}
+#at-plus-container:hover .icon {
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+
+    background-image: url(../assets/images/atplus_green.png);
+    -webkit-background-size: 40px;
+            background-size: 40px;
+}
+.mask {background-image: url(../assets/images/mask.png); }
+.history {background-image: url(../assets/images/history.png); }
+.message {background-image: url(../assets/images/message.png); }
+.setting {background-image: url(../assets/images/setting.png); }
+.sign {background-image: url(../assets/images/signout.png); }
+
+#at-plus-container:hover .mask {
+    top: -30px;
+    left: -54px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+
+    opacity: 1;
+}
+
+#at-plus-container:hover .history {
+    top: 5px;
+    left: -65px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+
+    opacity: 1;
+}
+#at-plus-container:hover .message {
+    top: 40px;
+    left: -54px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+
+    opacity: 1;
+}
+
+#at-plus-container:hover .setting {
+    top: 60px;
+    left: -24px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+
+    opacity: 1;
+}
+
+#at-plus-container:hover .sign {
+    top: 60px;
+    left: 16px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+
+    opacity: 1;
+}
