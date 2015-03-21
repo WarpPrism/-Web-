@@ -1,0 +1,67 @@
+* {
+    font-family: "Arial";
+}
+#wrap {
+    width: 500px;
+    margin: 80px auto;
+    padding: 50px 40px 60px;
+    box-shadow: 10px 10px 15px 10px #dddddd;
+    border-radius: 10px;
+    border: #dddddd 1px solid;
+}
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 2px solid #c0c0c0;
+    padding: 1px 3px;
+}
+td {
+    transition: background-color 0.5s ease-in-out;
+}
+td:hover {
+    background-color: #dddddd;
+}
+th {
+    background-color: #000080;
+    color: #FFF;
+    text-align: left;
+    transition: background-color 0.5s ease-in-out;
+}
+th:hover {
+    cursor: pointer;
+    background-color: #a4b1fb;
+}
+.alternate {
+    background-color: #dddddd;
+}
+h1 {
+    font-size: 26px;
+    font-weight: normal;
+    text-align: center;
+    margin-left: -5px;
+    transition: background-color 0.5s ease-in-out;
+}
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    transition: background-color 0.5s ease-in-out;
+}
+h1:hover, h2:hover {
+    background-color: #dddddd;
+}
+#staff {
+    width: 400px;
+}
+#todo {
+    width: 500px;
+}
+.ascend {
+    background: url('./ascend.png') no-repeat right #a4b1fb;
+}
+.descend {
+    background: url('./descend.png') no-repeat right #a4b1fb;
+}
+.highlight {
+    background-color: #6495ED;
+}
