@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    color: gray;
+}
+#at-plus-container {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+
+    cursor: pointer;
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+}
+
+#bottom-positioner {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+}
+
+.apb {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    -webkit-transition: all .3s .6s;
+         -o-transition: all .3s .6s;
+            transition: all .3s .6s;
+
+    border-radius: 50%;
+    background-color: rgba(0,0,60,.4);
+}
+#reset {
+    display: block;
+    position: fixed;
+    top:550px;
+    left: 900px;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+    border: solid 2px gray;
+    border-radius: 3px;
+    padding: 5px;
+    transition: all 0.5s ease-in-out 0s;
+}
+#start {
+    display: block;
+    position: fixed;
+    top:500px;
+    left: 900px;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+    border: solid 2px gray;
+    border-radius: 3px;
+    padding: 5px;
+    transition: all 0.5s ease-in-out 0s;
+}
+#reset:hover,#start:hover {
+    color: #FFF;
+    background: gray;
+    cursor: pointer;
+}
+.icon {
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition: all .3s .6s;
+         -o-transition: all .3s .6s;
+            transition: all .3s .6s;
+
+    background-image: url(./assets/images/atplus_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: 20px;
+            background-size: 20px;
+}
+#info-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 30px;
+    height: 30px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+
+    opacity: 0;
+    border-radius: 50%;
+    border: solid 1px #000;
+
+    background-color: rgba(0,0,10,.4);
+}
+.info {
+    position: relative;
+
+    width: 130px;
+    height: 130px;
+}
+.info li {
+    position: absolute;
+    top:45px;
+    left: 45px;
+}
+#sum {
+    color: #59c193;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#control-ring li {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 45px;
+    height: 45px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+
+    opacity: 0;
+    text-align: center;
+    border-radius: 50%;
+    border: solid 1px #000;
+    background-color: gray;
+}
+#control-ring li .text {
+    position: absolute;
+    top:8px;
+    left: 16px;
+    color: #59c193;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.adder {
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: -10px;
+    right: -6px;
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 50%;
+    background-color: red;
+    border: solid 1px #000; 
+    display: none;
+}
+#at-plus-container:hover {
+    bottom: 0;
+    left: calc(50% - 100px);
+
+    width: 200px;
+    height: 300px;
+    /*background-color: rgba(0,0,0,.1);*/
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+}
+#at-plus-container:hover #bottom-positioner {
+    top: 170px;
+    left: 100px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+}
+
+#at-plus-container:hover #info-bar {
+    top: -190px;
+    left: -45px;
+
+    width: 130px;
+    height: 130px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+
+    opacity: 1;
+    background-color: gray;
+}
+#at-plus-container:hover .apb {
+    top: -10px;
+    left: -10px;
+
+    width: 50px;
+    height: 50px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+
+    border-radius: 50%;
+    background-color: rgba(48,63,159,1);
+}
+#at-plus-container:hover .icon {
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+
+    background-image: url(./assets/images/atplus_green.png);
+    -webkit-background-size: 40px;
+            background-size: 40px;
+}
+
+#at-plus-container:hover .A {
+    top: -60px;
+    left: -80px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+    background-color: #303F9F;
+    opacity: 1;
+}
+
+#at-plus-container:hover .B {
+    top: 5px;
+    left: -100px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+    background-color: #303F9F;
+    opacity: 1;
+}
+#at-plus-container:hover .C {
+    top: 50px;
+    left: -64px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+    background-color: #303F9F;
+    opacity: 1;
+}
+
+#at-plus-container:hover .D {
+    top: 70px;
+    left: 0px;
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+    background-color: #303F9F;
+    opacity: 1;
+}
+
+#at-plus-container:hover .E {
+    top: 40px;
+    left: 60px;
+
+    -webkit-transition: all .8s;
+         -o-transition: all .8s;
+            transition: all .8s;
+    background-color: #303F9F;
+    opacity: 1;
+}
