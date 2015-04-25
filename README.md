@@ -1,4 +1,5 @@
-# Software Process Improvement（by WangQing）
+# SE-386 Software Process Improvement
+## By WangQing
 
 * The course is about:
 	* Cutting edge Modern Web Technologies
